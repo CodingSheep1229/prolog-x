@@ -68,9 +68,11 @@ echo form_open('user/register' , $attributes);
 	<a id='intro' class="anchor" name="intro"></a>
 	<div id="intro-space">
 		<div id="intro-text">
-			<!-- -->
+			<!--按下按鈕就插入文字-->
 		</div>
-		<div id="book-btn"></div>
+		
+		<img id="book-btn" src="book.png" alt="理論上這裡要有一本書" >
+		
 	</div>
 	<a id='schedule' class="anchor" name="schedule"></a>
 	<div class="container-fluid" id="schedule-space">

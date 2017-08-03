@@ -76,10 +76,12 @@ body {
     left: 15vw;
     top: 16vw;
     width: 29vw;
-    height: 17vw;
     display: inline-block;
-    border: solid 1px red;
-    border-radius: 100%;
+    cursor: pointer;
+}
+
+#book{
+    width: 29vw;
 }
 
 #intro-text {
