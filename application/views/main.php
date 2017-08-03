@@ -22,89 +22,49 @@ echo form_open('user/register' , $attributes);
 		<img id='prolog-pic' src="prolog_text.png">
 	</div>
 	<div class="container btn-row" id="select-bar">
-		<!-- <div class="row btn-row"> -->
-		<span class="col-sm-4 col-md-2">
+		<div class="row">
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="select-intro" class="bar-button">&emsp;&emsp;簡介&emsp;&emsp;</span>
-		</span>
-		<span class="col-sm-4 col-md-2">
+			</span>
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="select-schedule" class="bar-button">&emsp;&emsp;流程&emsp;&emsp;</span>
-		</span>
-		<span class="col-sm-4 col-md-2">
+			</span>
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="select-register" class="bar-button">&emsp;&emsp;報名&emsp;&emsp;</span>
-		</span>
-		<span class="col-sm-4 col-md-2">
+			</span>
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="select-pay" class="bar-button">&emsp;&emsp;匯款&emsp;&emsp;</span>
-		</span>
-		<span class="col-sm-4 col-md-2">
+			</span>
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="select-game" class="bar-button">&emsp;&emsp;遊戲&emsp;&emsp;</span>
-		</span>
-		<span class="col-sm-4 col-md-2">
+			</span>
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="select-contact" class="bar-button">&emsp;&emsp;聯絡&emsp;&emsp;</span>
-		</span>
-		<!-- </div> -->
+			</span>
+		</div>
 	</div>
 	<div class="container btn-row" id="fixed-bar">
-		<!-- <div class="row btn-row"> -->
-		<span class="col-sm-4 col-md-2">
+		<div class="row">
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="fixed-intro" class="bar-button">&emsp;&emsp;簡介&emsp;&emsp;</span>
-		</span>
-		<span class="col-sm-4 col-md-2">
+			</span>
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="fixed-schedule" class="bar-button">&emsp;&emsp;流程&emsp;&emsp;</span>
-		</span>
-		<span class="col-sm-4 col-md-2">
+			</span>
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="fixed-register" class="bar-button">&emsp;&emsp;報名&emsp;&emsp;</span>
-		</span>
-		<span class="col-sm-4 col-md-2">
+			</span>
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="fixed-pay" class="bar-button">&emsp;&emsp;匯款&emsp;&emsp;</span>
-		</span>
-		<span class="col-sm-4 col-md-2">
+			</span>
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="fixed-game" class="bar-button">&emsp;&emsp;遊戲&emsp;&emsp;</span>
-		</span>
-		<span class="col-sm-4 col-md-2">
+			</span>
+			<span class="col-md-2 col-sm-4 col-xs-4">
 				<span id="fixed-contact" class="bar-button">&emsp;&emsp;聯絡&emsp;&emsp;</span>
-		</span>
-		<!-- </div> -->
+			</span>
+		</div>	
 	</div>
-	<!--     <div id="select-bar">
-            <a href="#intro" class="btn">
-                    <div>簡介</div>
-            </a>
-            <a href="#schedule" class="btn">
-                    <div>流程</div>
-            </a>
-            <a href="#register" class="btn">
-                    <div>報名</div>
-            </a>
-            <a href="#pay" class="btn">
-                    <div>匯款</div>
-            </a>
-            <a href="#game" class="btn">
-                    <div>遊戲</div>
-            </a>
-            <a href="#contact" class="btn">
-                    <div>聯絡</div>
-            </a>
-    </div>
-    <div id="fixed-bar">
-            <a id="intron" href="#intro" class="btn">
-                    <div>簡介</div>
-            </a>
-            <a id="schedulen" href="#schedule" class="btn">
-                    <div>流程</div>
-            </a>
-            <a id="registern" href="#register" class="btn">
-                    <div>報名</div>
-            </a>
-            <a id="payn" href="#pay" class="btn">
-                    <div>匯款</div>
-            </a>
-            <a id="gamen" href="#game" class="btn">
-                    <div>遊戲</div>
-            </a>
-            <a id="contactn" href="#contact" class="btn">
-                    <div>聯絡</div>
-            </a>
-    </div> -->
 	<a id='intro' class="anchor" name="intro"></a>
 	<div id="intro-space">
 		<div id="intro-text">
@@ -113,9 +73,11 @@ echo form_open('user/register' , $attributes);
 		<div id="book-btn"></div>
 	</div>
 	<a id='schedule' class="anchor" name="schedule"></a>
-	<div id="schedule-space">
-		<div>
-			<!-- 流程 -->
+	<div class="container-fluid" id="schedule-space">
+		<div class="row" style="top: 9vw; position: relative;">
+			<div class="col-sm-4 col-xs-4"></div>
+			<img class="col-sm-6 col-xs-6" src="schedule.png" id="schedule-form">
+			<div class="col-sm-2 col-xs-2"></div>
 		</div>
 	</div>
 	<div id="first-footer">
@@ -193,6 +155,7 @@ echo form_open('user/register' , $attributes);
 			<br>
 			<span>緊急聯絡人:</span>
 			<input name="emergency_contact" type="text" style="width:15vw;" maxlength="9" placeholder="緊急聯絡人的名字" />
+			<br>
 			<span>緊急連絡人電話:</span>
 			<input name="emergency_phone" type="text" style="width:20vw;" maxlength="32" placeholder="Ex: 09XXXXXXXX" />
 			<br>
@@ -201,8 +164,8 @@ echo form_open('user/register' , $attributes);
 			<br>
 			<span>身分證字號:</span>
 			<input id='idd' name="id" type="text" style="width:25vw;" maxlength="32" placeholder="Ex: 輸入你的身分證字號，保險用的" />
-			<br>
-			<span>營服尺寸:</span>
+			<!-- <br> -->
+			<span style="margin-left: 3vw;">營服尺寸:</span>
 			<select name="size">
 				<option value='XS'>XS</option>
 				<option value='S'>S</option>
@@ -225,8 +188,8 @@ echo form_open('user/register' , $attributes);
 	<a id="pay" class="anchor" name="pay"></a>
 	<div class="container-fluid" id="pay-space">
 		<div class="row" id="pay-text">
-			<div class="col-md-4 col-sm-4"></div>
-			<div class="col-md-6 col-sm-6">
+			<div class="col-md-4 col-sm-4 col-xs-4"></div>
+			<div class="col-md-6 col-sm-6 col-xs-6">
 				<p>
 					<br>銀行代號：009
 					<br>帳號：6117-50-001813-00 潘美菁
@@ -236,7 +199,7 @@ echo form_open('user/register' , $attributes);
 					<br>b04101049@NTUIMu.edu.tw 給我們做確認：）
 				</p>
 			</div>
-			<div class="col-md-2 col-sm-2"></div>
+			<div class="col-md-2 col-sm-2 col-xs-2"></div>
 		</div>
 	</div>
 	<a id="game" class="anchor" name="game"></a>
@@ -248,7 +211,7 @@ echo form_open('user/register' , $attributes);
 	<a id="contact" class="anchor" name="contact"></a>
 	<div class="container-fluid" id="contact-space">
 		<div class="row" id="contact-text">
-			<div class="col-sm-4 col-md-4 ">
+			<div class="col-sm-4 col-md-4 col-xs-4">
 				<a target="_blank" href="https://www.facebook.com/profile.php?id=100000302855014&fref=ts">	
 					<img src="yiru.png" class="img-responsive img-circle pic">
 				</a>
@@ -256,7 +219,7 @@ echo form_open('user/register' , $attributes);
 					<br>簡翊如
 					<br>0989-265-165</p>
 			</div>
-			<div class="col-sm-4 col-md-4 ">
+			<div class="col-sm-4 col-md-4 col-xs-4">
 				<a target="_blank" href="https://www.facebook.com/herofrank?fref=ts">
 					<img src="han.png" class="img-responsive img-circle pic">
 				</a>
@@ -264,7 +227,7 @@ echo form_open('user/register' , $attributes);
 					<br>陳漢威
 					<br>0975-932-702</p>
 			</div>
-			<div class="col-sm-4 col-md-4 ">
+			<div class="col-sm-4 col-md-4 col-xs-4">
 				<a target="_blank" href="https://www.facebook.com/profile.php?id=100002029314996">
 					<img src="wei.png" class="img-responsive img-circle pic">
 				</a>
