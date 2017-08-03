@@ -1,0 +1,245 @@
+body {
+	background-image: url("prolog.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+	opacity: 0.95;
+}
+
+#prolog-pic {
+	margin: 20vw;
+	width: 60vw;
+}
+
+#picture-space {
+	width: 100%;
+	height: 48.8vw;
+	text-align: center;
+	line-height: 55vw;
+}
+
+#select-bar {
+	width: 100%;
+	/* height: 5vw; */
+	/* background-color: #000000; */
+	font-family: "Microsoft JhengHei";
+	font-size: 1.5vw;
+	color: #FFFFFF;
+	font-weight: bold;
+	line-height: 5vw;
+	text-align: center;
+	opacity: 0.7;
+	z-index: 99;
+
+}
+
+#fixed-bar {
+	width: 100%;
+	/* height: 5vw; */
+	/* background-color: #000000; */
+	font-family: "Microsoft JhengHei";
+	font-size: 1.5vw;
+	color: #FFFFFF;
+	font-weight: bold;
+	line-height: 5vw;
+	text-align: center;
+	display: none;
+	position: fixed;
+	top: 0;
+	opacity: 0.7;
+	z-index: 100;
+
+
+}
+
+
+.bar-button{
+	border-radius: 10vw;
+	cursor: pointer;
+}
+
+.btn-row {
+	/* padding-right: 2vw;
+	padding-left: 2vw; */
+	border: solid;
+	border: red;
+	background-color: black;
+}
+
+.anchor {
+	top: -5vw;
+	display: block;
+	position: relative;
+}
+
+#intro-space {
+	width: 100%;
+	height: 48.8vw;
+	background-image: url("intro.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#book-btn {
+	position: relative;
+	left: 15vw;
+	top: 16vw;
+	width: 29vw;
+	height: 17vw;
+	display: inline-block;
+	border: solid 1px red;
+	border-radius: 100%;
+}
+
+#intro-text {
+	position: relative;
+	left: 14vw;
+	top: 6vw;
+	width: 53vw;
+	height: 36vw;
+	background-color: black;
+	opacity: 0.5;
+	visibility: hidden;
+	border-radius: 3vw;
+	border: solid;
+	color: white;
+	vertical-align: top;
+	font-size: 2.2vw;
+	font-weight: bold;
+	font-family: "Microsoft JhengHei";
+	float: left;
+	padding-top: 2vw;
+	padding-left: 2.4vw;
+}
+
+#schedule-space {
+	width: 100%;
+	height: 48.8vw;
+	background-image: url('schedule.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: "Microsoft JhengHei";
+	font-size: 2.2vw;
+	font-weight: bold;
+	color: white;
+}
+
+#first-footer {
+    width: 100%;
+    height: 48.8vw;
+    background-image: url('first-footer.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: "Microsoft JhengHei";
+    font-size: 2.2vw;
+    font-weight: bold;
+    color: white;
+}
+
+#carousel-example-generic{
+    width: 56vw;
+    position: relative;
+    left: 21.5vw;
+    top: 7vw;
+}
+
+#register-space {
+	width: 100%;
+	height: 48.8vw;
+	background-image: url("register.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	font-family: "Microsoft JhengHei";
+	font-weight: bold;
+	color: white;
+	font-size: 1.5vw;
+	text-align: left;
+	vertical-align: center;
+	line-height: 3vw;
+}
+input{
+	background-color: rgba(0,0,0,0.5);
+	height: 2vw;
+	
+	border: none;
+}
+select{
+	background-color: rgba(0,0,0,0.5);
+
+}
+#reg{
+	position: relative;
+	left: 22vw;
+	top: 11vw;
+}
+#sub{
+	height: 3vw;
+	width: 7vw;
+	border-radius: 0.5vw;
+	border: solid;
+}
+
+#pay-space {
+	width: 100%;
+	height: 48.8vw;
+	background-image: url("pay.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* text-align: center;
+	font-family: "Microsoft JhengHei";
+	font-size: 50px;
+	font-weight: bold; */
+}
+
+#pay-text {
+	top: 7vw;
+	position: relative;
+	font-family: "Microsoft JhengHei";
+	font-size: 2vw;
+	color: white;
+	font-weight: bold;
+	/* text-align: center; */
+	line-height: 4vw;
+}
+
+#game-space {
+	width: 100%;
+	height: 48.8vw;
+	text-align: center;
+	font-family: "Microsoft JhengHei";
+	font-size: 2.2vw;
+	font-weight: bold;
+	color: white;
+}
+
+#contact-space {
+	width: 100%;
+	height: 48.8vw;
+	background-image: url('contact.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+#contact-text {
+	top: 13vw;
+	position: relative;
+	font-family: "Microsoft JhengHei";
+	font-size: 2vw;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	line-height: 3.5vw;
+	
+}
+
+.pic {
+	margin: 0 auto;
+	border: solid white;
+	width: 17vw;
+	height: 17vw;
+}
+
+
+
