@@ -14,6 +14,9 @@ $this->load->view('empty.php');
 	<link rel="stylesheet" type="text/css" href="prolog-x/css/prolog.css">
 </head>
 <body>
+<?php
+echo form_open('user/register' , $attributes);
+   ?>
 	<div id="picture-space">
 		<img id='prolog-pic' src="prolog-x/image/prolog_text.png">
 	</div>
@@ -193,7 +196,7 @@ $this->load->view('empty.php');
 					<option value='2L'>2L</option>
 					<option value='3L'>3L</option>
 				</select>
-				<label id="cloth-size-btn" class="btn-sm btn-xs">尺寸</label>
+				<label id="cloth-size-btn" class="btn btn-sm btn-xs">尺寸</label>
 			</div>
 			<div class="form-group">
 				<label>特殊食性：</label>
@@ -254,6 +257,7 @@ $this->load->view('empty.php');
 			</div>
 		</div>
 	</div>
+	<?=form_close()?>
 </body>
 <footer>
 	<center>copyright © 2017 NTUIM. all rights reserved</center>
