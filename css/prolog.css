@@ -3,7 +3,8 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     opacity: 0.95;
-    /* width: auto; */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #prolog-pic {
