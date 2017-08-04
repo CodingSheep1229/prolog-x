@@ -21,7 +21,7 @@ body {
 #select-bar {
     width: 100%;
     font-family: "Microsoft JhengHei";
-    font-size: 1.5vw;
+    font-size: 24px;
     color: #FFFFFF;
     font-weight: bold;
     line-height: 5vw;
@@ -33,7 +33,7 @@ body {
 #fixed-bar {
     width: 100%;
     font-family: "Microsoft JhengHei";
-    font-size: 1.5vw;
+    font-size: 24px;
     color: #FFFFFF;
     font-weight: bold;
     line-height: 5vw;
@@ -113,9 +113,24 @@ body {
     background-repeat: no-repeat;
 }
 
+#schedule-img-space {
+    width: 68vw;
+    height: 35vw;
+    position: relative;
+    left: 29.5vw;
+    top: 7vw;
+    overflow-y: auto;
+
+    line-height: 60px;
+    font-size: 25px;
+    font-family: "Microsoft JhengHei";
+    font-weight: bold;
+    color: white;
+}
+
 #schedule-form {
-	width: 60vw;
-	height: 30vw;
+	width: 65vw;
+	height: 35vw;
 	position: relative;
 }
 
@@ -145,38 +160,54 @@ body {
     background-image: url("register.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    font-family: "Microsoft JhengHei";
-    font-weight: bold;
-    color: white;
-    font-size: 1.5vw;
-    text-align: left;
+    /* text-align: left; */
     vertical-align: center;
-    line-height: 3vw;
 }
 
-input {
+/* input {
     background-color: rgba(0, 0, 0, 0.5);
     height: 2vw;
-
+    
     border: none;
-}
+} */
 
-select {
+/* select {
     background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 #reg {
     position: relative;
     left: 22vw;
     top: 11vw;
-    width: 70vw;
+    width: 60vw;
+    height: 34vw;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: "Microsoft JhengHei";
+    font-weight: bold;
+    color: white;
+    /* overflow-x: hidden; */
+    overflow-y: auto;
 }
 
-#sub {
+.input-block {
+     display: inline-block;
+     margin-left: 0.5vw;
+}
+
+/* #sub {
     height: 3vw;
     width: 7vw;
     border-radius: 0.5vw;
     border: solid;
+} */
+
+.btn-sm.btn-xs {
+/*     padding: 10px 20px; */
+    font-size: 20px;
+    border-radius: 0.5vw;
+    border: solid;
+    width: 7vw;
 }
 
 #pay-space {
@@ -188,10 +219,12 @@ select {
 }
 
 #pay-text {
-    top: 7vw;
+    width: 60vw;
+    top: 9vw;
+    left: 34vw;
     position: relative;
     font-family: "Microsoft JhengHei";
-    font-size: 2vw;
+    font-size: 22px;
     color: white;
     font-weight: bold;
     line-height: 4vw;
