@@ -193,7 +193,7 @@ $this->load->view('empty.php');
 					<option value='2L'>2L</option>
 					<option value='3L'>3L</option>
 				</select>
-				<label id="cloth-size-btn" class="btn btn-primary btn-sm btn-xs">尺寸</label>
+				<label id="cloth-size-btn" class="btn btn-sm btn-xs">尺寸</label>
 			</div>
 			<div class="form-group">
 				<label>特殊食性：</label>
