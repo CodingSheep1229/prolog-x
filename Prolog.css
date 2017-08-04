@@ -71,18 +71,26 @@ body {
     background-repeat: no-repeat;
 }
 
+#book-pic {
+    position: absolute;
+    left: 60vw;
+    top: 55vw;
+    width: 50vw;
+    display: inline-block;
+    z-index: 2;
+}
 #book-btn {
     position: relative;
-    left: 15vw;
-    top: 16vw;
+    left: 17vw;
+    top: 11vw;
     width: 29vw;
+    height: 20vw;
     display: inline-block;
     cursor: pointer;
+    border-radius: 50%;
+    z-index: 3;
 }
 
-#book{
-    width: 29vw;
-}
 
 #intro-text {
     position: relative;
@@ -103,6 +111,7 @@ body {
     float: left;
     padding-top: 2vw;
     padding-left: 2.4vw;
+    z-index: 1;
 }
 
 #schedule-space {

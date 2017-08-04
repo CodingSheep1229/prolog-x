@@ -42,15 +42,15 @@ $(window).scroll(function() {
 
 
 //book-btn float
-let book_top = 16;
+let book_top = 55;
 let book_move_unit = 0.2;
 function timedCount()
 {
-    if(book_top > 16 || book_top < 15)
+    if(book_top > 55 || book_top < 53)
         book_move_unit *= -1;
     book_top += book_move_unit;
-    let book = document.getElementById('book-btn');
-    $("#book-btn").css('top',book_top+'vw');
+    let book = document.getElementById('book-pic');
+    $("#book-pic").css('top',book_top+'vw');
     let t=setTimeout("timedCount()",100);
     // console.log(book_top);
 }
@@ -58,9 +58,9 @@ timedCount();
 
 //book-btn hover
 $("#book-btn").hover(function(){
-    $("#book-btn").attr('src','book-hover.png');
+    $("#book-pic").attr('src','book-hover.png');
 },function(){
-    $("#book-btn").attr('src','book.png');
+    $("#book-pic").attr('src','book.png');
 });
 
 //book-btn click
