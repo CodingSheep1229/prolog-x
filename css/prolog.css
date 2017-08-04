@@ -69,16 +69,20 @@ body {
     background-image: url("../image/intro.png");
     background-size: 100%;
     background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
 }
+
 
 #book-pic {
     position: absolute;
     left: 60vw;
-    top: 55vw;
+    top: 5vw;
     width: 50vw;
     display: inline-block;
     z-index: 2;
 }
+
 #book-btn {
     position: relative;
     left: 17vw;
@@ -138,9 +142,9 @@ body {
 }
 
 #schedule-form {
-	width: 65vw;
-	height: 35vw;
-	position: relative;
+    width: 65vw;
+    height: 35vw;
+    position: relative;
 }
 
 #first-footer {
@@ -173,12 +177,14 @@ body {
     vertical-align: center;
 }
 
+
 /* input {
     background-color: rgba(0, 0, 0, 0.5);
     height: 2vw;
     
     border: none;
 } */
+
 
 /* select {
     background-color: rgba(0, 0, 0, 0.5);
@@ -199,10 +205,23 @@ body {
     overflow-y: auto;
 }
 
-.input-block {
-     display: inline-block;
-     margin-left: 0.5vw;
+#cloth-size-btn {
+    background-color: #444444;
+    opacity: 0.7;
 }
+
+#cloth-size-pic {
+    position: absolute;
+    border: white 2px solid;
+    display: none;
+    width: 90vw;
+}
+
+.input-block {
+    display: inline-block;
+    margin-left: 0.5vw;
+}
+
 
 /* #sub {
     height: 3vw;
@@ -212,7 +231,7 @@ body {
 } */
 
 .btn-sm.btn-xs {
-/*     padding: 10px 20px; */
+    /*     padding: 10px 20px; */
     font-size: 20px;
     border-radius: 0.5vw;
     border: solid;

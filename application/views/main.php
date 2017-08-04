@@ -13,11 +13,7 @@ $this->load->view('empty.php');
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="prolog-x/css/prolog.css">
 </head>
-
 <body>
-<?php
-echo form_open('user/register' , $attributes);
-   ?>
 	<div id="picture-space">
 		<img id='prolog-pic' src="prolog-x/image/prolog_text.png">
 	</div>
@@ -197,6 +193,7 @@ echo form_open('user/register' , $attributes);
 					<option value='2L'>2L</option>
 					<option value='3L'>3L</option>
 				</select>
+				<label id="cloth-size-btn" class="btn btn-primary btn-sm btn-xs">尺寸</label>
 			</div>
 			<div class="form-group">
 				<label>特殊食性：</label>
@@ -207,53 +204,6 @@ echo form_open('user/register' , $attributes);
 				<input name="other" type="text" style="width:30vw;" maxlength="128" class="form-control input-block" placeholder="有什麼想告訴我們的，或是哪幾天不能到都麻煩再這告訴我們：）" />
 			</div>
 			<button name="Submit" type="submit" value="報名" class="btn btn-primary btn-sm btn-xs">報名</button>
-
-			<!-- <span>姓名：</span>
-			<input name="name" type="text" style="width:18vw;" maxlength="32" placeholder="記得輸入本名rrrrr" />
-			<br>
-			<span>出生年月日:</span>
-			<input name="birthday" type="date" style="width:11.75vw;" maxlength="32" />
-			<br>
-			<span>生理性別:</span>
-			<input type="radio" name="gender" value="男"> 男
-			<input type="radio" name="gender" value="女"> 女
-			<br>
-			<span>電子郵件:</span>
-			<input name="email" type="email" style="width:20vw;" maxlength="128" placeholder="填學校的或自己的皆可" />
-			<br>
-			<span>連絡電話:</span>
-			<input name="phone" type="tel" style="width:20vw;" maxlength="32" placeholder="Ex: 09XXXXXXXX" />
-			<br>
-			<span>緊急聯絡人:</span>
-			<input name="emergency_contact" type="text" style="width:15vw;" maxlength="9" placeholder="緊急聯絡人的名字" />
-			<br>
-			<span>緊急連絡人電話:</span>
-			<input name="emergency_phone" type="text" style="width:20vw;" maxlength="32" placeholder="Ex: 09XXXXXXXX" />
-			<br>
-			<span>與緊急聯絡人的關係:</span>
-			<input name="emergency_relation" type="text" style="width:18vw;" maxlength="9" placeholder="Ex: 父子/母子/祖孫..." />
-			<br>
-			<span>身分證字號:</span>
-			<input id='idd' name="id" type="text" style="width:25vw;" maxlength="32" placeholder="Ex: 輸入你的身分證字號，保險用的" />
-			<br>
-			<span>營服尺寸:</span>
-			<select name="size">
-				<option value='XS'>XS</option>
-				<option value='S'>S</option>
-				<option value='M' SELECTED>M</option>
-				<option value='L'>L</option>
-				<option value='XL'>XL</option>
-				<option value='2L'>2L</option>
-				<option value='3L'>3L</option>
-			</select>
-			<br>
-			<span>特殊食性:</span>
-			<input name="eat" type="text" style="width:47vw;" maxlength="32" placeholder="有沒有特別不吃什麼的，沒有就填無" />
-			<br>
-			<span>備註:</span>
-			<input name="other" type="text" style="width:50vw;" maxlength="128" placeholder="有什麼想告訴我們的，或是哪幾天不能到都麻煩再這告訴我們：）" />
-			<br>
-			<input id='sub' name="Submit" type="submit" value="報名" style="padding-top: 0vw;"> -->
 
 		</div>
 	</div>
@@ -304,7 +254,6 @@ echo form_open('user/register' , $attributes);
 			</div>
 		</div>
 	</div>
-	   <?=form_close()?>
 </body>
 <footer>
 	<center>copyright © 2017 NTUIM. all rights reserved</center>
