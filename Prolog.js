@@ -52,7 +52,6 @@ function timedCount()
     let book = document.getElementById('book-btn');
     $("#book-btn").css('top',book_top+'vw');
     let t=setTimeout("timedCount()",100);
-    console.log(book_top);
 }
 timedCount();
 
