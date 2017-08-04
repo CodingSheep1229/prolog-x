@@ -58,9 +58,9 @@ timedCount();
 
 //book-btn hover
 $("#book-btn").hover(function(){
-    $("#book-pic").attr('src','book-hover.png');
+    $("#book-pic").attr('src','prolog-x/image/book-hover.png');
 },function(){
-    $("#book-pic").attr('src','book.png');
+    $("#book-pic").attr('src','prolog-x/image/book.png');
 });
 
 //book-btn click

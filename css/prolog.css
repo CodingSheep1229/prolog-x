@@ -1,5 +1,5 @@
 body {
-    background-image: url("prolog.jpg");
+    background-image: url("../image/prolog.jpg");
     background-size: 100%;
     background-attachment: fixed;
     opacity: 0.95;
@@ -21,7 +21,7 @@ body {
 #select-bar {
     width: 100%;
     font-family: "Microsoft JhengHei";
-    font-size: 24px;
+    font-size: 22px;
     color: #FFFFFF;
     font-weight: bold;
     line-height: 5vw;
@@ -33,7 +33,7 @@ body {
 #fixed-bar {
     width: 100%;
     font-family: "Microsoft JhengHei";
-    font-size: 24px;
+    font-size: 22px;
     color: #FFFFFF;
     font-weight: bold;
     line-height: 5vw;
@@ -66,7 +66,7 @@ body {
 #intro-space {
     width: 100%;
     height: 48.8vw;
-    background-image: url("intro.png");
+    background-image: url("../image/intro.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -117,7 +117,7 @@ body {
 #schedule-space {
     width: 100%;
     height: 48.8vw;
-    background-image: url('schedule-background.png');
+    background-image: url('../image/schedule-background.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -146,7 +146,7 @@ body {
 #first-footer {
     width: 100%;
     height: 48.8vw;
-    background-image: url('first-footer.png');
+    background-image: url('../image/first-footer.png');
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
@@ -166,7 +166,7 @@ body {
 #register-space {
     width: 100%;
     height: 48.8vw;
-    background-image: url("register.png");
+    background-image: url("../image/register.png");
     background-size: 100%;
     background-repeat: no-repeat;
     /* text-align: left; */
@@ -222,7 +222,7 @@ body {
 #pay-space {
     width: 100%;
     height: 48.8vw;
-    background-image: url("pay.png");
+    background-image: url("../image/pay.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -252,7 +252,7 @@ body {
 #contact-space {
     width: 100%;
     height: 48.8vw;
-    background-image: url('contact.png');
+    background-image: url('../image/contact.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }

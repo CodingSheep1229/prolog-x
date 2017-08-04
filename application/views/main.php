@@ -11,7 +11,7 @@ $this->load->view('empty.php');
 
 ?>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="Prolog.css">
+	<link rel="stylesheet" type="text/css" href="prolog-x/css/prolog.css">
 </head>
 
 <body>
@@ -19,48 +19,48 @@ $this->load->view('empty.php');
 echo form_open('user/register' , $attributes);
    ?>
 	<div id="picture-space">
-		<img id='prolog-pic' src="prolog_text.png">
+		<img id='prolog-pic' src="prolog-x/image/prolog_text.png">
 	</div>
 	<div class="container btn-row" id="select-bar">
 		<div class="row">
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="select-intro" class="bar-button">&emsp;&emsp;簡介&emsp;&emsp;</span>
 			</span>
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="select-schedule" class="bar-button">&emsp;&emsp;流程&emsp;&emsp;</span>
 			</span>
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="select-register" class="bar-button">&emsp;&emsp;報名&emsp;&emsp;</span>
 			</span>
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="select-pay" class="bar-button">&emsp;&emsp;匯款&emsp;&emsp;</span>
 			</span>
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="select-game" class="bar-button">&emsp;&emsp;遊戲&emsp;&emsp;</span>
 			</span>
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="select-contact" class="bar-button">&emsp;&emsp;聯絡&emsp;&emsp;</span>
 			</span>
 		</div>
 	</div>
 	<div class="container btn-row" id="fixed-bar">
 		<div class="row">
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="fixed-intro" class="bar-button">&emsp;&emsp;簡介&emsp;&emsp;</span>
 			</span>
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="fixed-schedule" class="bar-button">&emsp;&emsp;流程&emsp;&emsp;</span>
 			</span>
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="fixed-register" class="bar-button">&emsp;&emsp;報名&emsp;&emsp;</span>
 			</span>
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="fixed-pay" class="bar-button">&emsp;&emsp;匯款&emsp;&emsp;</span>
 			</span>
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="fixed-game" class="bar-button">&emsp;&emsp;遊戲&emsp;&emsp;</span>
 			</span>
-			<span class="col-md-2 col-sm-4 col-xs-4">
+			<span class="col-md-2 col-sm-4 col-xs-6">
 				<span id="fixed-contact" class="bar-button">&emsp;&emsp;聯絡&emsp;&emsp;</span>
 			</span>
 		</div>
@@ -70,14 +70,14 @@ echo form_open('user/register' , $attributes);
 		<div id="intro-text">
 			<!--按下按鈕就插入文字-->
 		</div>
-		<img id="book-pic" src="book.png" alt="理論上這裡要有一本書">
+		<img id="book-pic" src="prolog-x/image/book.png" alt="理論上這裡要有一本書">
 		<div id="book-btn"></div>
 	</div>
 	<!-- 	<a id='schedule' class="anchor" name="schedule"></a>
 	<div class="container-fluid" id="schedule-space">
 		<div class="row" style="top: 9vw; position: relative;">
 			<div class="col-sm-4 col-xs-4"></div>
-			<img class="col-sm-6 col-xs-6" src="schedule.png" id="schedule-form">
+			<img class="col-sm-6 col-xs-6" src="prolog-x/image/schedule.png" id="schedule-form">
 			<div class="col-sm-2 col-xs-2"></div>
 		</div>
 	</div> -->
@@ -87,7 +87,7 @@ echo form_open('user/register' , $attributes);
 			<div style="padding-left: 2vw;">活動時間：8/29 ~ 8/31</div>
 			<a target="_blank" href="https://www.facebook.com/gocamping6/"><div style="padding-left: 2vw; margin-bottom: 1.5vw; color: #FFF0AC;">
 			活動地點：流星花園露營區</div></a>
-			<img src="schedule.png" id="schedule-form">
+			<img src="prolog-x/image/schedule.png" id="schedule-form">
 		</div>
 	</div>
 	<div id="first-footer">
@@ -104,32 +104,32 @@ echo form_open('user/register' , $attributes);
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="foot1.jpg">
+					<img src="prolog-x/image/foot1.jpg">
 					<div class="carousel-caption">
 					</div>
 				</div>
 				<div class="item">
-					<img src="foot2.jpg">
+					<img src="prolog-x/image/foot2.jpg">
 					<div class="carousel-caption">
 					</div>
 				</div>
 				<div class="item">
-					<img src="foot3.jpg">
+					<img src="prolog-x/image/foot3.jpg">
 					<div class="carousel-caption">
 					</div>
 				</div>
 				<div class="item">
-					<img src="foot4.jpg">
+					<img src="prolog-x/image/foot4.jpg">
 					<div class="carousel-caption">
 					</div>
 				</div>
 				<div class="item">
-					<img src="foot5.jpg">
+					<img src="prolog-x/image/foot5.jpg">
 					<div class="carousel-caption">
 					</div>
 				</div>
 				<div class="item">
-					<img src="foot6.jpg">
+					<img src="prolog-x/image/foot6.jpg">
 					<div class="carousel-caption">
 					</div>
 				</div>
@@ -280,7 +280,7 @@ echo form_open('user/register' , $attributes);
 		<div class="row" id="contact-text">
 			<div class="col-sm-4 col-md-4 col-xs-4">
 				<a target="_blank" href="https://www.facebook.com/profile.php?id=100000302855014&fref=ts">	
-					<img src="yiru.png" class="img-responsive img-circle pic">
+					<img src="prolog-x/image/yiru.png" class="img-responsive img-circle pic">
 				</a>
 				<p>隊輔長
 					<br>簡翊如
@@ -288,7 +288,7 @@ echo form_open('user/register' , $attributes);
 			</div>
 			<div class="col-sm-4 col-md-4 col-xs-4">
 				<a target="_blank" href="https://www.facebook.com/herofrank?fref=ts">
-					<img src="han.png" class="img-responsive img-circle pic">
+					<img src="prolog-x/image/han.png" class="img-responsive img-circle pic">
 				</a>
 				<p>副召
 					<br>陳漢威
@@ -296,7 +296,7 @@ echo form_open('user/register' , $attributes);
 			</div>
 			<div class="col-sm-4 col-md-4 col-xs-4">
 				<a target="_blank" href="https://www.facebook.com/profile.php?id=100002029314996">
-					<img src="wei.png" class="img-responsive img-circle pic">
+					<img src="prolog-x/image/wei.png" class="img-responsive img-circle pic">
 				</a>
 				<p>隊輔長
 					<br>李和維
@@ -309,10 +309,10 @@ echo form_open('user/register' , $attributes);
 <footer>
 	<center>copyright © 2017 NTUIM. all rights reserved</center>
 </footer>
-<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="bootstrap.min.js"></script>
-<script type="text/javascript" src="Prolog.js"></script>
-<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="prolog-x/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="prolog-x/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="prolog-x/js/prolog.js"></script>
+<script type="text/javascript" src="prolog-x/js/jquery-ui.min.js"></script>
 
 </html>
 
