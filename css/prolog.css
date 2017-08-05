@@ -2,6 +2,8 @@ body {
     background-image: url("../image/prolog.jpg");
     background-size: 100%;
     background-attachment: fixed;
+    background-color: black;
+    background-repeat: no-repeat;
     opacity: 0.95;
     width: 100%;
     overflow-x: hidden;
