@@ -223,7 +223,7 @@ echo form_open('user/register' , $attributes);
 		</div>
 	</div>
 	<a id="game" class="anchor" name="game"></a>
-	<div id="game-space">
+	<div id="game-space" class="hidden-sm hidden-xs">
 		<div id="game-help-text">
 			<br>故事背景:
 			<br>遊戲的主角-漢威-是一個讀書人。
@@ -250,6 +250,11 @@ echo form_open('user/register' , $attributes);
 			<br>_</div>
 		<div id="enchant-stage"></div>
 		<div id="game-help" class="btn btn-sm btn-xs">遊戲說明</div>
+	</div>
+	<div id="game-alternative" class="hidden-md hidden-lg hidden-xl">
+		<p style="margin: 0;">
+		<br><br>Sorry目前只有電腦能玩噢<br>或是你的螢幕不夠寬<br><br><br>
+		</p>
 	</div>
 	<a id="contact" class="anchor" name="contact"></a>
 	<div class="container-fluid" id="contact-space">

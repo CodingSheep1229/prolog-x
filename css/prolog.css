@@ -269,6 +269,15 @@ body {
     color: white;
     padding-top: 6vw;
 }
+#game-alternative{
+    width: 100%;
+    text-align: center;
+    font-family: "Microsoft JhengHei";
+    background-color: black;
+    font-size: 2.2vw;
+    font-weight: bold;
+    color: white;
+}
 
 #enchant-stage{
     margin: auto;
