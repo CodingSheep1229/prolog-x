@@ -67,10 +67,10 @@ echo form_open('user/register' , $attributes);
 	<a id='intro' class="anchor" name="intro"></a>
 	<div id="intro-space">
 		<div id="basic-info">
-			<div style="padding-left: 2vw;">活動時間：8/29 ~ 8/31</div>
+			<div style="padding-left: 2vw;">時間：8/29 ~ 8/31</div>
 			<a target="_blank" href="https://www.facebook.com/gocamping6/">
 				<div style="padding-left: 2vw; margin-bottom: 1.5vw; color: #FFF0AC;">
-					活動地點：流星花園露營區</div>
+					地點：流星花園露營區</div>
 			</a>
 		</div>
 		<div id="intro-text">
