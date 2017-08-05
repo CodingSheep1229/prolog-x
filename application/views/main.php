@@ -151,7 +151,7 @@ echo form_open('user/register' , $attributes);
 	<a id='register' class="anchor" name="register"></a>
 	<div id="register-space">
 		<div id='reg'>
-			<!-- <div class="form-group">
+			<div class="form-group">
 				<label>姓名：</label>
 				<input name="name" type="text" style="width:18vw;" maxlength="32" class="form-control input-block" placeholder="記得輸入本名rrrrr" />
 			</div>
@@ -210,11 +210,11 @@ echo form_open('user/register' , $attributes);
 				<label>備註：</label>
 				<input name="other" type="text" style="width:30vw;" maxlength="128" class="form-control input-block" placeholder="有什麼想告訴我們的，或是哪幾天不能到都麻煩再這告訴我們：）" />
 			</div>
-			<button name="Submit" type="submit" value="報名" class="btn btn-primary btn-sm btn-xs">報名</button> -->
+			<button name="Submit" type="submit" value="報名" class="btn btn-primary btn-sm btn-xs">報名</button>
 
 			
 
-			<span>姓名：</span>
+			<!-- <span>姓名：</span>
 			<input name="name" type="text" style="width:18vw;" maxlength="32" placeholder="記得輸入本名rrrrr" />
 			<br>
 			<span>出生年月日:</span>
@@ -260,7 +260,7 @@ echo form_open('user/register' , $attributes);
 			<span>備註:</span>
 			<input name="other" type="text" style="width:50vw;" maxlength="128" placeholder="有什麼想告訴我們的，或是哪幾天不能到都麻煩再這告訴我們：）" />
 			<br>
-			<input id='sub' name="Submit" type="submit" value="報名" class="btn btn-sm btn-xs" style="padding-top: 0vw;">
+			<input id='sub' name="Submit" type="submit" value="報名" class="btn btn-sm btn-xs" style="padding-top: 0vw;"> -->
 		</div>
 	</div>
 	<a id="pay" class="anchor" name="pay"></a>
