@@ -224,9 +224,32 @@ echo form_open('user/register' , $attributes);
 	</div>
 	<a id="game" class="anchor" name="game"></a>
 	<div id="game-space">
-		<div>
-			<!-- 遊戲 -->
-		</div>
+		<div id="game-help-text">
+			<br>故事背景:
+			<br>遊戲的主角-漢威-是一個讀書人。
+			<br>他熱愛讀書，正所謂一小時不讀書，便覺面目可憎。
+			<br>你現在要幫助漢威，讓他保持清醒並認真讀書。
+			<br>因為漢威是一個嚴謹的人，他不允許任何一條知識被略過，
+			<br>所以當有一本書的知識沒被漢威吸收到，他就會崩潰。
+			<br>所謂K書，並不是拿頭或者身體去K書，
+			<br>所以拿漢威的身體去K書，他也會崩潰。
+			<br>
+			<br>操作說明:
+			<br>[a or <-]:向左走; [d or ->]:向右走
+			<br>[w]:跳躍; [滑鼠左鍵]:射擊(小心子彈數量喔，雖然會慢慢補充，但還是要把理解力花在刀口上)
+			<br>[space]:喝能量補給飲料，漢威振奮五秒，用身體K書或被石頭打也不會痛了。(即畫面左上角protect)(每30秒會送1瓶)
+			<br>小心上方落石，他會把漢威擊暈讓他不能讀書。
+			<br>問號 + 是武器升級，讓漢威讀書"一以貫之","融會貫通"5秒鐘，想要考高分的話很重要。
+			<br>在遊戲右半邊獲取知識可以獲得兩倍分數，這叫做讀書效率。
+			<br>左界線和右界線是相通的。
+			<br>
+			<br>備註:
+			<br>因為製作人懶散，所以此遊戲只有電腦才能玩QQ，在此致歉。
+			<br>又是因為製作人懶散，所以要重玩就按[F5]刷新網站吧!
+			<br>將遊戲分數截圖，或許宿營當天會有奇妙的事情發生在你身上喔。
+			<br>_</div>
+		<div id="enchant-stage"></div>
+		<div id="game-help" class="btn btn-sm btn-xs">遊戲說明</div>
 	</div>
 	<a id="contact" class="anchor" name="contact"></a>
 	<div class="container-fluid" id="contact-space">
@@ -264,6 +287,8 @@ echo form_open('user/register' , $attributes);
 </footer>
 <script type="text/javascript" src="prolog-x/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="prolog-x/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="prolog-x/game/enchant.js"></script>
+<script type="text/javascript" src="prolog-x/game/game.js"></script>
 <script type="text/javascript" src="prolog-x/js/prolog.js"></script>
 <script type="text/javascript" src="prolog-x/js/jquery-ui.min.js"></script>
 

@@ -261,12 +261,37 @@ body {
 
 #game-space {
     width: 100%;
-    height: 48.8vw;
     text-align: center;
     font-family: "Microsoft JhengHei";
+    background-color: black;
     font-size: 2.2vw;
     font-weight: bold;
     color: white;
+    padding-top: 6vw;
+}
+
+#enchant-stage{
+    margin: auto;
+    margin-bottom: 2vw;
+}
+
+#game-help-text{
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 2vw;
+    background-color: white;
+    border-radius: 5vw;
+    color: black;
+    opacity: 0.7;
+    font-size: 1.5vw;
+    display: none;
+}
+
+#game-help{
+    font-size: 1.4vw;
+    margin-bottom: 1vw;
+    z-index: 4;
 }
 
 #contact-space {
@@ -289,7 +314,7 @@ body {
 }
 
 .pic {
-    margin: 0 auto;
+    margin: auto;
     border: solid white;
     width: 17vw;
     height: 17vw;

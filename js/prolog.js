@@ -123,6 +123,23 @@ $(function() {
     });
 });
 
+//game-help
+let game_help = document.getElementById('game-help');
+let help = false;
+game_help.addEventListener('click', (event) => {
+        if(!help){
+            $('#game-help-text').css('display','block');
+            $('#enchant-stage').css('display','none');
+            help = !help;
+        }
+        else{
+            $('#game-help-text').css('display','none');
+            $('#enchant-stage').css('display','block');
+            help = !help;
+        }
+    
+})
+
 //bar
 $(document).ready(function() {
     $("#select-intro").click(function() {
@@ -187,3 +204,4 @@ $(document).ready(function() {
     });
 
 });
+
