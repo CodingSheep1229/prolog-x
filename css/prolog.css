@@ -74,12 +74,25 @@ body {
     position: relative;
 }
 
+#basic-info{
+    line-height: 40px;
+    font-size: 25px;
+    font-family: "Microsoft JhengHei";
+    font-weight: bold;
+    color: white;
+
+    position: absolute;
+    z-index: 3;
+    left: 70vw;
+    top:3vw;
+}
+
 
 #book-pic {
     position: absolute;
-    left: 60vw;
-    top: 5vw;
-    width: 50vw;
+    left: 70vw;
+    top: 13vw;
+    width: 30vw;
     display: inline-block;
     z-index: 2;
 }
@@ -134,12 +147,6 @@ body {
     left: 29.5vw;
     top: 7vw;
     overflow-y: auto;
-
-    line-height: 60px;
-    font-size: 25px;
-    font-family: "Microsoft JhengHei";
-    font-weight: bold;
-    color: white;
 }
 
 #schedule-form {

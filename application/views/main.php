@@ -66,6 +66,13 @@ echo form_open('user/register' , $attributes);
 	</div>
 	<a id='intro' class="anchor" name="intro"></a>
 	<div id="intro-space">
+		<div id="basic-info">
+			<div style="padding-left: 2vw;">活動時間：8/29 ~ 8/31</div>
+			<a target="_blank" href="https://www.facebook.com/gocamping6/">
+				<div style="padding-left: 2vw; margin-bottom: 1.5vw; color: #FFF0AC;">
+					活動地點：流星花園露營區</div>
+			</a>
+		</div>
 		<div id="intro-text">
 			<!--按下按鈕就插入文字-->
 		</div>
@@ -83,9 +90,6 @@ echo form_open('user/register' , $attributes);
 	<a id='schedule' class="anchor" name="schedule"></a>
 	<div id="schedule-space">
 		<div id="schedule-img-space">
-			<div style="padding-left: 2vw;">活動時間：8/29 ~ 8/31</div>
-			<a target="_blank" href="https://www.facebook.com/gocamping6/"><div style="padding-left: 2vw; margin-bottom: 1.5vw; color: #FFF0AC;">
-			活動地點：流星花園露營區</div></a>
 			<img src="prolog-x/image/schedule.png" id="schedule-form">
 		</div>
 	</div>
@@ -147,7 +151,7 @@ echo form_open('user/register' , $attributes);
 	<a id='register' class="anchor" name="register"></a>
 	<div id="register-space">
 		<div id='reg'>
-			<div class="form-group">
+			<!-- <div class="form-group">
 				<label>姓名：</label>
 				<input name="name" type="text" style="width:18vw;" maxlength="32" class="form-control input-block" placeholder="記得輸入本名rrrrr" />
 			</div>
@@ -206,8 +210,57 @@ echo form_open('user/register' , $attributes);
 				<label>備註：</label>
 				<input name="other" type="text" style="width:30vw;" maxlength="128" class="form-control input-block" placeholder="有什麼想告訴我們的，或是哪幾天不能到都麻煩再這告訴我們：）" />
 			</div>
-			<button name="Submit" type="submit" value="報名" class="btn btn-primary btn-sm btn-xs">報名</button>
+			<button name="Submit" type="submit" value="報名" class="btn btn-primary btn-sm btn-xs">報名</button> -->
 
+			
+
+			<span>姓名：</span>
+			<input name="name" type="text" style="width:18vw;" maxlength="32" placeholder="記得輸入本名rrrrr" />
+			<br>
+			<span>出生年月日:</span>
+			<input name="birthday" type="date" style="width:11.75vw;" maxlength="32" />
+			<br>
+			<span>生理性別:</span>
+			<input type="radio" name="gender" value="男"> 男
+			<input type="radio" name="gender" value="女"> 女
+			<br>
+			<span>電子郵件:</span>
+			<input name="email" type="email" style="width:20vw;" maxlength="128" placeholder="填學校的或自己的皆可" />
+			<br>
+			<span>連絡電話:</span>
+			<input name="phone" type="tel" style="width:20vw;" maxlength="32" placeholder="Ex: 09XXXXXXXX" />
+			<br>
+			<span>緊急聯絡人:</span>
+			<input name="emergency_contact" type="text" style="width:15vw;" maxlength="9" placeholder="緊急聯絡人的名字" />
+			<br>
+			<span>緊急連絡人電話:</span>
+			<input name="emergency_phone" type="text" style="width:20vw;" maxlength="32" placeholder="Ex: 09XXXXXXXX" />
+			<br>
+			<span>與緊急聯絡人的關係:</span>
+			<input name="emergency_relation" type="text" style="width:18vw;" maxlength="9" placeholder="Ex: 父子/母子/祖孫..." />
+			<br>
+			<span>身分證字號:</span>
+			<input id='idd' name="id" type="text" style="width:25vw;" maxlength="32" placeholder="Ex: 輸入你的身分證字號，保險用的" />
+			<br>
+			<span>營服尺寸:</span>
+			<select name="size">
+				<option value='XS'>XS</option>
+				<option value='S'>S</option>
+				<option value='M' SELECTED>M</option>
+				<option value='L'>L</option>
+				<option value='XL'>XL</option>
+				<option value='2L'>2L</option>
+				<option value='3L'>3L</option>
+			</select>
+			<span id="cloth-size-btn" class="btn btn-sm btn-xs">尺寸</span>
+			<br>
+			<span>特殊食性:</span>
+			<input name="eat" type="text" style="width:47vw;" maxlength="32" placeholder="有沒有特別不吃什麼的，沒有就填無" />
+			<br>
+			<span>備註:</span>
+			<input name="other" type="text" style="width:50vw;" maxlength="128" placeholder="有什麼想告訴我們的，或是哪幾天不能到都麻煩再這告訴我們：）" />
+			<br>
+			<input id='sub' name="Submit" type="submit" value="報名" class="btn btn-sm btn-xs" style="padding-top: 0vw;">
 		</div>
 	</div>
 	<a id="pay" class="anchor" name="pay"></a>

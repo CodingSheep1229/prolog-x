@@ -54,11 +54,11 @@ $(window).scroll(function() {
 
 
 //book-btn float
-let book_top = 5;
+let book_top = 13;
 let book_move_unit = 0.2;
 
 function timedCount() {
-    if (book_top > 5 || book_top < 3)
+    if (book_top > 13 || book_top < 11)
         book_move_unit *= -1;
     book_top += book_move_unit;
     let book = document.getElementById('book-pic');
@@ -69,10 +69,16 @@ function timedCount() {
 timedCount();
 
 //book-btn hover
+let bookbtn_status = 0;
 $("#book-btn").hover(function() {
     $("#book-pic").attr('src', 'prolog-x/image/book-hover.png');
 }, function() {
-    $("#book-pic").attr('src', 'prolog-x/image/book.png');
+    if(bookbtn_status == 0){
+        $("#book-pic").attr('src', 'prolog-x/image/book.png');
+    }
+    else{
+        $("#book-pic").attr('src', 'prolog-x/image/book-next.png');
+    }
 });
 
 //book-btn click
@@ -88,8 +94,11 @@ function apear() {
 }
 
 let bookbtn = document.getElementById('book-btn');
-let bookbtn_status = 0;
+
 bookbtn.addEventListener('click', (event) => {
+    if(bookbtn_status == 0){
+        $("#book-pic").attr('src', 'prolog-x/image/book-next.png');
+    }
     if (book_i == 0) {
         bookbtn_status++;
         if (bookbtn_status > 3)
