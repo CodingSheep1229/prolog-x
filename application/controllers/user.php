@@ -95,9 +95,9 @@ class user extends CI_Controller
 		}
 
 			$this->db->insert('register', $data);
-			// echo '<script>
-			// 		alert("報名成功!!!");
-			// 		</script>';
+			echo '<script>
+					alert("報名成功!!!");
+					</script>';
 			redirect('','refresh');
 		
 	}
