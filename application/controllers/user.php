@@ -18,18 +18,18 @@ class user extends CI_Controller
 		$this->load->library('session');
 		$this->load->helper('url');
 		$data = array(
-			'name' => $_POST['name'],
-			'birthday' => $_POST['birthday'],
-			'gender' => $_POST['gender'],
-			'email'=>$_POST['email'],
-			'phone'=>$_POST['phone'],
-			'emergency_contact'=>$_POST['emergency_contact'],
-			'emergency_phone'=>$_POST['emergency_phone'],
-			'emergency_relation'=>$_POST['emergency_relation'],
-			'id'=>$_POST['id'],
-			'size'=>$_POST['size'],
-			'eat'=>$_POST['eat'],
-			'other'=>$_POST['other'],
+			'name' => $_GET['name'],
+			'birthday' => $_GET['birthday'],
+			'gender' => $_GET['gender'],
+			'email'=>$_GET['email'],
+			'phone'=>$_GET['phone'],
+			'emergency_contact'=>$_GET['emergency_contact'],
+			'emergency_phone'=>$_GET['emergency_phone'],
+			'emergency_relation'=>$_GET['emergency_relation'],
+			'id'=>$_GET['id'],
+			'size'=>$_GET['size'],
+			'eat'=>$_GET['eat'],
+			'other'=>$_GET['other'],
 		);
 
 		// if (empty($data['name']))

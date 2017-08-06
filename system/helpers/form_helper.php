@@ -46,7 +46,7 @@ if ( ! function_exists('form_open'))
 
 		if ($attributes == '')
 		{
-			$attributes = 'method="post"';
+			$attributes = 'method="get"';
 		}
 
 		// If an action is not a full URL then turn it into one
@@ -65,7 +65,7 @@ if ( ! function_exists('form_open'))
 		$form .= '>';
 
 		// Add CSRF field if enabled, but leave it out for GET requests and requests to external websites	
-		if ($CI->config->item('csrf_protection') === TRUE AND ! (strpos($action, $CI->config->base_url()) === FALSE OR strpos($form, 'method="get"')))	
+		if ($CI->config->item('csrf_protection') === TRUE AND ! (strpos($action, $CI->config->base_url()) === FALSE OR strpos($form, 'method="post"')))	
 		{
 			$hidden[$CI->security->get_csrf_token_name()] = $CI->security->get_csrf_hash();
 		}
@@ -316,9 +316,9 @@ if ( ! function_exists('form_dropdown'))
 		if (count($selected) === 0)
 		{
 			// If the form name appears in the $_POST array we have a winner!
-			if (isset($_POST[$name]))
+			if (isset($_GET[$name]))
 			{
-				$selected = array($_POST[$name]);
+				$selected = array($_GET[$name]);
 			}
 		}
 
@@ -676,12 +676,12 @@ if ( ! function_exists('set_value'))
 	{
 		if (FALSE === ($OBJ =& _get_validation_object()))
 		{
-			if ( ! isset($_POST[$field]))
+			if ( ! isset($_GET[$field]))
 			{
 				return $default;
 			}
 
-			return form_prep($_POST[$field], $field);
+			return form_prep($_GET[$field], $field);
 		}
 
 		return form_prep($OBJ->set_value($field, $default), $field);
@@ -710,16 +710,16 @@ if ( ! function_exists('set_select'))
 
 		if ($OBJ === FALSE)
 		{
-			if ( ! isset($_POST[$field]))
+			if ( ! isset($_GET[$field]))
 			{
-				if (count($_POST) === 0 AND $default == TRUE)
+				if (count($_GET) === 0 AND $default == TRUE)
 				{
 					return ' selected="selected"';
 				}
 				return '';
 			}
 
-			$field = $_POST[$field];
+			$field = $_GET[$field];
 
 			if (is_array($field))
 			{
@@ -765,16 +765,16 @@ if ( ! function_exists('set_checkbox'))
 
 		if ($OBJ === FALSE)
 		{
-			if ( ! isset($_POST[$field]))
+			if ( ! isset($_GET[$field]))
 			{
-				if (count($_POST) === 0 AND $default == TRUE)
+				if (count($_GET) === 0 AND $default == TRUE)
 				{
 					return ' checked="checked"';
 				}
 				return '';
 			}
 
-			$field = $_POST[$field];
+			$field = $_GET[$field];
 
 			if (is_array($field))
 			{
@@ -820,16 +820,16 @@ if ( ! function_exists('set_radio'))
 
 		if ($OBJ === FALSE)
 		{
-			if ( ! isset($_POST[$field]))
+			if ( ! isset($_GET[$field]))
 			{
-				if (count($_POST) === 0 AND $default == TRUE)
+				if (count($_GET) === 0 AND $default == TRUE)
 				{
 					return ' checked="checked"';
 				}
 				return '';
 			}
 
-			$field = $_POST[$field];
+			$field = $_GET[$field];
 
 			if (is_array($field))
 			{
@@ -975,7 +975,7 @@ if ( ! function_exists('_attributes_to_string'))
 		{
 			if ($formtag == TRUE AND strpos($attributes, 'method=') === FALSE)
 			{
-				$attributes .= ' method="post"';
+				$attributes .= ' method="get"';
 			}
 
 			if ($formtag == TRUE AND strpos($attributes, 'accept-charset=') === FALSE)
@@ -997,7 +997,7 @@ if ( ! function_exists('_attributes_to_string'))
 
 			if ( ! isset($attributes['method']) AND $formtag === TRUE)
 			{
-				$atts .= ' method="post"';
+				$atts .= ' method="get"';
 			}
 
 			if ( ! isset($attributes['accept-charset']) AND $formtag === TRUE)
