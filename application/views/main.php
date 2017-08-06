@@ -179,7 +179,7 @@ echo form_open('user/register' , $attributes);
 			</div>
 			<div class="form-group">
 				<label>緊急聯絡人電話：</label>
-				<input name="emergency_phone" type="text" style="width:20vw;" maxlength="32" class="form-control input-block" placeholder="Ex: 09XXXXXXXX" />
+				<input name="emergency_phone" type="tel" style="width:20vw;" maxlength="32" class="form-control input-block" placeholder="Ex: 09XXXXXXXX" />
 			</div>
 			<div class="form-group">
 				<label>與緊急聯絡人的關係：</label>
