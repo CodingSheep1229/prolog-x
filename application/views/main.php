@@ -89,9 +89,9 @@ echo form_open('user/register' , $attributes);
 	</div> -->
 	<a id='schedule' class="anchor" name="schedule"></a>
 	<div id="schedule-space">
-		<div id="schedule-img-space">
+		<!-- <div id="schedule-img-space">
 			<img src="prolog-x/image/schedule.png" id="schedule-form">
-		</div>
+		</div> -->
 	</div>
 	<div id="first-footer">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
