@@ -266,13 +266,14 @@ echo form_open('user/register' , $attributes);
 	<a id="pay" class="anchor" name="pay"></a>
 	<div id="pay-space">
 		<div id="pay-text">
-			銀行代號：700
-			<br>帳號：0001236-0541821
-			<br>戶名：國立臺灣大學資訊管理學系學生會林軒逸
+			銀行名稱：華南銀行 (代號008)
+			<br>分行名稱：北桃園分行 (代號244)
+			<br>帳號：244200573409
+			<br>戶名：徐遠志
 			<br>費用：3500元整
 			<br>報名與繳費期限：即日起至8/20
 			<br>匯款完成後請將匯款帳號後五碼寄到
-			<br>b04101049@NTUIMu.edu.tw 給我們做確認：）
+			<br>b05705046@ntu.edu.tw 給我們做確認：）
 		</div>
 	</div>
 	<a id="game" class="anchor" name="game"></a>
