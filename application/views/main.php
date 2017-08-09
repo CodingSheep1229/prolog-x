@@ -204,7 +204,7 @@ echo form_open('user/register' , $attributes);
 			</div>
 			<div class="form-group">
 				<label>特殊食性：</label>
-				<input name="eat" type="text" style="width:25vw;" maxlength="32" class="form-control input-block" placeholder="有沒有特別不吃什麼的，沒有就填無" />
+				<input name="eat" type="text" style="width:30vw;" maxlength="32" class="form-control input-block" placeholder="有沒有特別不吃什麼的，沒有就填無" />
 			</div>
 			<div class="form-group">
 				<label>備註：</label>
@@ -273,7 +273,8 @@ echo form_open('user/register' , $attributes);
 			<br>費用：3500元整
 			<br>報名與繳費期限：即日起至8/20
 			<br>匯款完成後請將匯款帳號後五碼寄到
-			<br>b05705046@ntu.edu.tw 給我們做確認：）
+			<br>b05705046@ntu.edu.tw 
+			給我們做確認：）
 		</div>
 	</div>
 	<a id="game" class="anchor" name="game"></a>
