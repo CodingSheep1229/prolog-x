@@ -208,7 +208,7 @@ echo form_open('user/register' , $attributes);
 			</div>
 			<div class="form-group">
 				<label>備註：</label>
-				<input name="other" type="text" style="width:35vw;" maxlength="128" class="form-control input-block" placeholder="有什麼想告訴我們的，或是哪幾天不能到都麻煩再這告訴我們：）" />
+				<input name="other" type="text" style="width:45vw;" maxlength="128" class="form-control input-block" placeholder="有什麼想告訴我們的，或是哪幾天不能到都麻煩再這告訴我們：）" />
 			</div>
 			<button name="Submit" type="submit" value="報名" class="btn btn-primary btn-sm btn-xs">報名</button>
 
