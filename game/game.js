@@ -11,7 +11,7 @@ window.onload = function() {
     game.keybind(65, 'left');
     game.keybind(68, 'right');
     game.keybind(87, 'up');
-    game.keybind(32, 'down');
+    game.keybind(69, 'down');
     var bullet = 5;
     var protect = 1;
     var protectTime = 0;
@@ -51,12 +51,12 @@ window.onload = function() {
     protectTimeLabel.y = 80;
     protectTimeLabel.color = "white";
 
-    game.preload("prolog-x/game/book.jpg");
-    game.preload("prolog-x/game/hanwei.jpg");
-    game.preload("prolog-x/game/question.jpg");
-    game.preload("prolog-x/game/question2.jpg");
-    game.preload("prolog-x/game/rock.jpg");
-    game.preload("prolog-x/game/bigbook.jpg");
+    game.preload("book.jpg");
+    game.preload("hanwei.jpg");
+    game.preload("question.jpg");
+    game.preload("question2.jpg");
+    game.preload("rock.jpg");
+    game.preload("bigbook.jpg");
     game.onload = function() {
         game.rootScene.backgroundColor = 'black';
         //bear
@@ -67,7 +67,7 @@ window.onload = function() {
         var Bear = enchant.Class.create(enchant.Sprite, {
             initialize: function() {
                 enchant.Sprite.call(this, 50, 100);
-                this.image = game.assets["prolog-x/game/hanwei.jpg"];
+                this.image = game.assets["hanwei.jpg"];
                 this.x = 0;
                 this.y = 400;
                 game.rootScene.addChild(this); // canvas
@@ -145,7 +145,7 @@ window.onload = function() {
         var Apple = enchant.Class.create(enchant.Sprite, {
             initialize: function() {
                 enchant.Sprite.call(this, 32, 50);
-                this.image = game.assets['prolog-x/game/question.jpg']; // set image
+                this.image = game.assets['question.jpg']; // set image
                 this.frame = 15; // set image data
                 if (true) {
                     this.moveTo(bear.x + 50, bear.y + 8); // move to the position
@@ -164,7 +164,7 @@ window.onload = function() {
         var Enemy = enchant.Class.create(enchant.Sprite, {
             initialize: function() {
                 enchant.Sprite.call(this, 50, 50);
-                this.image = game.assets["prolog-x/game/book.jpg"];
+                this.image = game.assets["book.jpg"];
                 this.frame = 5;
                 this.y = 400 - rand(120);
                 this.x = 1000;
@@ -185,7 +185,7 @@ window.onload = function() {
         var Enemy2 = enchant.Class.create(enchant.Sprite, {
             initialize: function() {
                 enchant.Sprite.call(this, 50, 50);
-                this.image = game.assets["prolog-x/game/book.jpg"];
+                this.image = game.assets["book.jpg"];
                 this.frame = 5;
                 this.y = rand(100);
                 this.x = 1000;
@@ -207,9 +207,9 @@ window.onload = function() {
         var Enemy3 = enchant.Class.create(enchant.Sprite, {
             initialize: function() {
                 enchant.Sprite.call(this, 100, 100);
-                this.image = game.assets["prolog-x/game/bigbook.jpg"];
+                this.image = game.assets["bigbook.jpg"];
                 this.frame = 5;
-                this.life = 3;
+                this.life = 5;
                 this.y = 400 - rand(100);
                 this.x = 1000;
                 this.speed = 2;
@@ -229,7 +229,7 @@ window.onload = function() {
         var Rock = enchant.Class.create(enchant.Sprite, {
             initialize: function() {
                 enchant.Sprite.call(this, 30, 50);
-                this.image = game.assets["prolog-x/game/rock.jpg"];
+                this.image = game.assets["rock.jpg"];
                 this.frame = 2;
                 this.y = 0;
                 this.x = rand(1000);
@@ -248,7 +248,7 @@ window.onload = function() {
         var Weapon = enchant.Class.create(enchant.Sprite, {
             initialize: function() {
                 enchant.Sprite.call(this, 30, 50);
-                this.image = game.assets["prolog-x/game/question2.jpg"];
+                this.image = game.assets["question2.jpg"];
                 this.frame = 5;
                 this.y = 0;
                 this.x = rand(700);
